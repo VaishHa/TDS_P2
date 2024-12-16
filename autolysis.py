@@ -37,7 +37,7 @@ LLM_API_URL = "https://aiproxy.sanand.workers.dev/openai/v1/chat/completions"
 LLM_MODEL = "gpt-4o-mini"
 
 # Ensure the environment variable for AI Proxy token is set
-AIPROXY_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjIzZjEwMDAwNzVAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.vLYVVR_NekQv5FMmeRVaVVEVh0aJybbBW55NgCaygCY"
+AIPROXY_TOKEN = os.getenv("AIPROXY_TOKEN")
 if not AIPROXY_TOKEN:
     print("Error: AIPROXY_TOKEN environment variable not set.")
     sys.exit(1)
