@@ -91,5 +91,5 @@ By pursuing these further analyses and actions, significant strides can be made 
 ![year_distribution.png](year_distribution.png)
 
 ### Life Ladder_distribution.png
-![Life_Ladder_distribution.png](Life Ladder_distribution.png)
+![Life_Ladder_distribution.png](Life_Ladder_distribution.png)
 
