@@ -86,7 +86,7 @@ def generate_visualizations(df, output_dir):
         images.append(corr_path)
 
     # Distribution plots
-    for col in numeric_columns[:2]:
+    for col in numeric_columns:
         plt.figure(figsize=(6, 6))
         sns.histplot(df[col], kde=True)
         plt.title(f"Distribution of {col}")
