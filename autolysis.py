@@ -108,13 +108,13 @@ def ask_llm_for_insights(analysis_summary):
         payload = {
             "model": LLM_MODEL,
             "messages": [
-                {"role": "system", "content": "You are a data analyst. Provide analysis based concise narrative."},
+                {"role": "system", "content": "You are a data analyst. Provide detailed narrative based on analysis."},
                 {"role": "user", "content": f"""
 I analyzed a dataset with the following details:
 Columns and Types: {analysis_summary['columns']}
 Missing Values: {analysis_summary['missing_values']}
-Summary Statistics: {json.dumps(analysis_summary['summary_stats'])[:500]} (truncated for brevity)
-Correlations: {json.dumps(analysis_summary['correlations'])[:500]} (truncated for brevity)
+Summary Statistics: {json.dumps(analysis_summary['summary_stats'])}
+Correlations: {json.dumps(analysis_summary['correlations'])} 
 
 I have also generated visualizations saved as low-resolution PNGs for correlation heatmap and distributions.
 Please:
